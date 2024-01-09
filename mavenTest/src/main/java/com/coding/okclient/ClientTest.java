@@ -335,9 +335,9 @@ class Param {
 
 @Slf4j
 class TencentCloudAPITC3Demo {
-    static String SecretId = "AKID4zgARTtBOQIvLXbT9duyoRr43pQnywgC";
+    static String SecretId = "A3KID4zgAR***r43pQnywgC";
 
-    static String SecretKey = "LRJxNbcSwCD0Zv270fBUbU9ZljSzINFs";
+    static String SecretKey = "LRJxNbc***ljSzINFss";
     private final static Charset UTF8 = StandardCharsets.UTF_8;
     // 需要设置环境变量 TENCENTCLOUD_SECRET_ID，值为示例的 AKIDz8krbsJ5yKBZQpn74WFkmLPx3*******
     private final static String SECRET_ID = SecretId;
