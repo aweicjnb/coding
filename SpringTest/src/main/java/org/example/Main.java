@@ -11,6 +11,7 @@ import java.util.Iterator;
 public class Main {
     public static void main(String[] aaa) {
         ConfigurableApplicationContext run = SpringApplication.run(Main.class, aaa);
+
         Iterator<String> beanNamesIterator = run.getBeanFactory().getBeanNamesIterator();
         while (beanNamesIterator.hasNext()) {
             System.out.println(beanNamesIterator.next());
