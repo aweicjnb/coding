@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.swing.plaf.metal.MetalBorders;
 
-@Configuration
+
 public class MyConfig {
-    @Bean
+
     public Payload getPayload() {
         return new Payload("大哥我出来了喔");
     }
