@@ -1,18 +1,18 @@
-package com.coding.test;
+package com.coding.common_http;
 
 import com.coding.aspect.test.StopClass;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Properties;
 
 @RestController
 public class Controller {
@@ -21,7 +21,7 @@ public class Controller {
     StopClass stopClass;
 
     @GetMapping("/hello")
-    public Object m() {
+    public void m() throws InterruptedException {
         System.out.println("hello world");
 /*        return new User("user");*/
         List list = new ArrayList();
@@ -33,7 +33,59 @@ public class Controller {
         list.add(new User("111", list2));
         list.add(new User("333", new HashMap()));
 
-        return list;
+//        while (true) {
+////            Object arr = new Object[Integer.MAX_VALUE - 3];
+////            List list1 = new ArrayList();
+////            Thread.sleep(100);
+//            list.add(new User("111", list2));
+//        }
+
+/*
+
+        Object lock1 = new Object();
+        Object lock2 = new Object();
+        new Thread(() -> {
+            synchronized (lock1) {
+                System.out.println(Thread.currentThread().getName());
+                System.out.println("get lock1");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                synchronized (lock2) {
+                    System.out.println(Thread.currentThread().getName());
+                    System.out.println("get lock2");
+                }
+            }
+        }, "T1").start();
+
+        new Thread(() -> {
+            synchronized (lock2) {
+                System.out.println(Thread.currentThread().getName());
+                System.out.println("get lock2");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                synchronized (lock1) {
+                    System.out.println(Thread.currentThread().getName());
+                    System.out.println("get lock1");
+                }
+            }
+        }, "T2").start();
+*/
+
+
+        Date data = new Date(1609459200000L);
+        System.out.println(data.getYear());
+        System.out.println(data.getMonth());
+        System.out.println(data.getDay());
+        System.out.println(data.getHours());
+        System.out.println(data.getMinutes());
+        System.out.println(data.getSeconds());
+
     }
 
     @GetMapping("/test")
@@ -98,7 +150,7 @@ public class Controller {
 
 
 
-
+/*-------------------------#################################-----------------------------------*/
     @GetMapping("/createCookie")
     public String createCookieTest(HttpServletResponse response) {
         String name = "myCookie";
@@ -115,6 +167,7 @@ public class Controller {
         System.out.println(cookie.isHttpOnly());
         return cookie.getValue();
     }
+
 
 
 }

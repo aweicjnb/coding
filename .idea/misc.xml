@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/mavenTest/pom.xml" />
         <option value="$PROJECT_DIR$/SpringTest/pom.xml" />
         <option value="$PROJECT_DIR$/spring-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/canal-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/java_basic/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding/pom.xml" />
+        <option value="$PROJECT_DIR$/springAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/java-io/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

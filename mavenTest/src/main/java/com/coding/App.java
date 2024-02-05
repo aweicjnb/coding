@@ -17,14 +17,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("");
+/*        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("");
         classPathXmlApplicationContext.getBean("bean");
 
 
 
 
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
-        annotationConfigApplicationContext.getBean("");
+        annotationConfigApplicationContext.getBean("");*/
 
         SpringApplication.run(App.class, args);
         System.out.println( "Hello World!" );

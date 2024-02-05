@@ -1,10 +1,7 @@
-package com.coding.test;
+package com.coding.common_http;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
 
 @Data
 /*@NoArgsConstructor*/

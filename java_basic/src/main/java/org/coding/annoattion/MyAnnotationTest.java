@@ -1,2 +1,13 @@
-package org.coding.annoattion;public class MyAnnotationTest {
+package org.coding.annoattion;
+
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnotationTest {
+    String value() default "my name is 注解";
 }

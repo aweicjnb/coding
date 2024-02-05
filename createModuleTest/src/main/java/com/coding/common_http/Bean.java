@@ -1,4 +1,4 @@
-package com.coding.test;
+package com.coding.common_http;
 
 import org.springframework.stereotype.Component;
 

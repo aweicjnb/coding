@@ -1,6 +1,10 @@
 package com.coding.jdbc;
 
+//import jdk.internal.loader.ClassLoaders;
+
+
 import java.sql.*;
+import java.util.ServiceLoader;
 
 public class JDBCTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
@@ -11,6 +15,15 @@ public class JDBCTest {
         Class.forName("com.mysql.cj.jdbc.Driver");
         //获取连接
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root", "root");
+        System.out.println("------");
+        System.out.println(ServiceLoader.class.getClassLoader());
+        System.out.println(DriverManager.class.getClassLoader());
+//        ClassLoaders.platformClassLoader();
+//        Class.forName(cn, false, loader);
+
+//        ServiceLoader<Driver> load = ServiceLoader.load(com.mysql.jdbc.Driver.class);
+        System.out.println(com.mysql.jdbc.Driver.class.getClassLoader());
+        System.out.println("------");
         //创建sql对象
 /*        String sql = "select * from t_seat where price = '23300' limit 20";
         Statement statement = connection.createStatement();*/

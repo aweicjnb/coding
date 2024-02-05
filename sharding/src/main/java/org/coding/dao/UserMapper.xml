@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="org.coding.dao.UserDao">
+    <!--select查询语句-->
+    <insert id="insert" parameterType="org.coding.entity.User">
+        insert into t_user(`name`, `age`) values ( #{name}, #{age});
+    </insert>
+</mapper>

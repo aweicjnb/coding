@@ -7,21 +7,18 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.sctp.nio.NioSctpServerChannel;
 import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
-public class MyNetty {
-    public static void main(String[] args) {
-
-    }
-
+public class MyNettyServer {
     public static void server() throws InterruptedException {
         NioEventLoopGroup boosGroup = new NioEventLoopGroup(1);
         NioEventLoopGroup wordGroup = new NioEventLoopGroup();
 
         ServerBootstrap bootstrap = new ServerBootstrap();
         bootstrap.group(boosGroup, wordGroup)
-                .channel(NioSctpServerChannel.class)
+                .channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_BACKLOG, 8)
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
                 .childHandler(new ChannelInitializer<SocketChannel>() {

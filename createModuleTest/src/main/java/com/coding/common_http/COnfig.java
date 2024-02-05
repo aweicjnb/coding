@@ -1,6 +1,4 @@
-package com.coding.test;
-
-import org.springframework.context.annotation.Configuration;
+package com.coding.common_http;
 
 /*@Configuration
 public class COnfig {

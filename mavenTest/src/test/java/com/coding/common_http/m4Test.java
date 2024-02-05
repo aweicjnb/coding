@@ -1,10 +1,9 @@
-package com.coding.test;
+package com.coding.common_http;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Collections;
 
 @Slf4j
@@ -75,6 +74,12 @@ public class m4Test {
             log.info("想测试这样写是否有歧义:{}", "看到没果然有问题");
         }
 
+    }
+
+    @Test
+    public void stringUtilsTest() {
+        String str = "";
+        System.out.println(StringUtils.isBlank(str));
     }
 
 }

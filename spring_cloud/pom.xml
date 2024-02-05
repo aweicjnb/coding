@@ -7,11 +7,19 @@
     <groupId>org.coding</groupId>
     <artifactId>spring_cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>parent-mode</module>
+        <module>pro02_spring_cloud_common</module>
+        <module>pro03_spring_cloud_provider</module>
+        <module>pro04_spring_cloud_consumer</module>
+        <module>server-eureka</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
 </project>
