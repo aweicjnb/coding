@@ -1,9 +1,6 @@
-com/coding/test/User.class
-com/coding/test2/A.class
-com/coding/mongodb/DB.class
-com/coding/App.class
-com/coding/test/Controller.class
 com/coding/test2/C.class
+com/coding/mongodb/DB.class
 com/coding/test3/B.class
-com/coding/test/User2.class
 com/coding/test2/D.class
+com/coding/test2/A.class
+com/coding/App.class
