@@ -29,7 +29,7 @@ public class MQServer {
         //开启队列持久化(如果未开启，连接关闭，队列就没了)
         boolean durable = true;
         //队列名称，持久化，多个客户端共享，自动删除,其他参数
-        channel.queueDeclare(QUEUE_NAME, durable, false, false, null);
+//        channel.queueDeclare(QUEUE_NAME, durable, false, false, null);
 
 
         //消息发送确认（确保消息一定发送到消息队列，这个一般结合消息的持久化）

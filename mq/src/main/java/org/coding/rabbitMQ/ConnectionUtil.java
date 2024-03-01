@@ -55,7 +55,7 @@ public class ConnectionUtil {
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.TOPIC);
             //声明一个队列
             //这些参数还不知道什么含义(但是斗胆猜测类似于生产者发布消息时的参数是类似的)
-            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
             //将队列和交换机绑定
             //队列，交换机，路由key
             channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, routeKey);
