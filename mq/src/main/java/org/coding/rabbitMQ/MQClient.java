@@ -60,6 +60,7 @@ public class MQClient {
         };
 
 
+
         //是否自动应答
         Boolean autoAck = false;
         //消费队列，自动应答，成功回调，失败回调
