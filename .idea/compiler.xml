@@ -7,17 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="virtual-thread" />
         <module name="server-eureka" />
         <module name="SpringTest" />
+        <module name="mq" />
         <module name="springAOP" />
+        <module name="redisson" />
+        <module name="thread-pool-executor" />
         <module name="createModuleTest" />
         <module name="sharding" />
+        <module name="ac-auto" />
+        <module name="coding" />
         <module name="canal-demo" />
         <module name="pro04_spring_cloud_consumer" />
         <module name="pro02_spring_cloud_common" />
         <module name="java-io" />
         <module name="spring-starter" />
         <module name="java_basic" />
+        <module name="ali-pay" />
         <module name="mavenTest" />
         <module name="pro03_spring_cloud_provider" />
       </profile>
@@ -27,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringTest" options="-parameters" />
       <module name="mavenTest" options="-parameters" />
+      <module name="redisson" options="-parameters" />
       <module name="sharding" options="" />
       <module name="spring-starter" options="-parameters" />
     </option>

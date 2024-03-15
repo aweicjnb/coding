@@ -14,11 +14,17 @@
         <option value="$PROJECT_DIR$/sharding/pom.xml" />
         <option value="$PROJECT_DIR$/springAOP/pom.xml" />
         <option value="$PROJECT_DIR$/java-io/pom.xml" />
+        <option value="$PROJECT_DIR$/mq/pom.xml" />
+        <option value="$PROJECT_DIR$/ali-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/ac-auto/pom.xml" />
+        <option value="$PROJECT_DIR$/virtual-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/coding/pom.xml" />
+        <option value="$PROJECT_DIR$/redisson/pom.xml" />
+        <option value="$PROJECT_DIR$/thread-pool-executor/pom.xml" />
       </list>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="zulu-1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="corretto-18" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

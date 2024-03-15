@@ -1,2 +1,8 @@
-package org.coding.virtual;public class MyVirtualThread {
+package org.coding.virtual;
+
+import java.util.concurrent.Executors;
+
+public class MyVirtualThread {
+    public static void main(String[] args) {
+    }
 }

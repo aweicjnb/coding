@@ -1,4 +1,4 @@
-package org.coding.ac;
+package org.coding.trie;
 
 
 import java.util.LinkedList;
@@ -101,7 +101,7 @@ class ACWithFrequency {
             while (tmp != root) {
                 if (tmp.isEndingChar) {
                     tmp.count++; // 更新词频
-                    System.out.println("匹配到关键词：" + tmp.word + "，出现次数：" + tmp.count);
+//                    System.out.println("匹配到关键词：" + tmp.word + "，出现次数：" + tmp.count);
                 }
                 tmp = tmp.fail;
             }
@@ -110,11 +110,15 @@ class ACWithFrequency {
 
 
     public static void main(String[] args) {
+        /**
+         * ac自动机
+         */
         ACWithFrequency ac = new ACWithFrequency();
         String[] keywords = {"she", "he", "her", "hers"};
         ac.buildAC(keywords);
         ac.match("ashehed");
     }
+
 }
 
 
